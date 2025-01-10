@@ -1,0 +1,41 @@
+<form action="#" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required><br><br>
+
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="Male"><label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="Female"><label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="Other"><label for="other">Other</label><br><br>
+
+    <label for="height">Height:</label>
+    <input type="number" id="height" name="height" required><br><br>
+
+    <label for="weight">Weight:</label>
+    <input type="number" id="weight" name="weight" required><br><br>
+
+    <label>Lifestyle:</label>
+    <input type="checkbox" id="sedentary" name="lifestyle" value="Sedentary"><label for="sedentary">Sedentary</label>
+    <input type="checkbox" id="moderate" name="lifestyle" value="Moderate"><label for="moderate">Moderate</label>
+    <input type="checkbox" id="active" name="lifestyle" value="Active"><label for="active">Active</label><br><br>
+
+    <label for="diet">Dietary Preference:</label>
+    <select id="diet" name="diet">
+        <option value="Vegetarian">Vegetarian</option>
+        <option value="Non-Vegetarian">Non-Vegetarian</option>
+    </select><br><br>
+
+    <label for="activity-level">Activity Level:</label>
+    <select id="activity-level" name="activity-level">
+        <option value="Sedentary">Sedentary</option>
+        <option value="Moderate">Moderate</option>
+        <option value="Active">Active</option>
+    </select><br><br>
+
+    <label for="health-concerns">Health Concerns (Optional):</label>
+    <textarea id="health-concerns" name="health-concerns"></textarea><br><br>
+
+    <button type="submit">Submit</button>
+</form>
