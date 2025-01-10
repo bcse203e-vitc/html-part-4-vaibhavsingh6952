@@ -1,0 +1,31 @@
+<form action="#" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label>Rate the Website:</label>
+    <input type="radio" id="star1" name="rating" value="1"><label for="star1">1</label>
+    <input type="radio" id="star2" name="rating" value="2"><label for="star2">2</label>
+    <input type="radio" id="star3" name="rating" value="3"><label for="star3">3</label>
+    <input type="radio" id="star4" name="rating" value="4"><label for="star4">4</label>
+    <input type="radio" id="star5" name="rating" value="5"><label for="star5">5</label><br><br>
+
+    <label for="feedback">Feedback:</label>
+    <textarea id="feedback" name="feedback"></textarea><br><br>
+
+    <label for="feedback-type">Type of Feedback:</label>
+    <select id="feedback-type" name="feedback-type">
+        <option value="Suggestion">Suggestion</option>
+        <option value="Bug Report">Bug Report</option>
+        <option value="Compliment">Compliment</option>
+    </select><br><br>
+
+    <label>Would you recommend us?</label>
+    <input type="radio" id="recommend-yes" name="recommend" value="Yes"><label for="recommend-yes">Yes</label>
+    <input type="radio" id="recommend-no" name="recommend" value="No"><label for="recommend-no">No</label><br><br>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+</form>

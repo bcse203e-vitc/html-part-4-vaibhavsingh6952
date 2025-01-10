@@ -1,0 +1,69 @@
+<form action="#" method="POST">
+
+    <input type="radio" id="page1-radio" name="page" checked style="display:none;">
+    <input type="radio" id="page2-radio" name="page" style="display:none;">
+    <input type="radio" id="page3-radio" name="page" style="display:none;">
+
+    <div class="page" id="page1">
+        <h3>Personal Details</h3>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required><br><br>
+
+        <label for="contact">Contact Info:</label>
+        <input type="text" id="contact" name="contact" required><br><br>
+
+        <label class="next" for="page2-radio">Next</label>
+    </div>
+
+    <div class="page" id="page2">
+        <h3>Educational Background</h3>
+        <label for="degree">Degree:</label>
+        <input type="text" id="degree" name="degree"><br><br>
+
+        <label for="year">Year of Passing:</label>
+        <input type="text" id="year" name="year"><br><br>
+
+        <label for="institution">Institution Name:</label>
+        <input type="text" id="institution" name="institution"><br><br>
+
+        <label class="previous" for="page1-radio">Previous</label>
+        <label class="next" for="page3-radio">Next</label>
+    </div>
+
+    <div class="page" id="page3">
+        <h3>Work Experience</h3>
+        <label for="company">Company Name:</label>
+        <input type="text" id="company" name="company"><br><br>
+
+        <label for="designation">Designation:</label>
+        <input type="text" id="designation" name="designation"><br><br>
+
+        <label for="duration">Duration:</label>
+        <input type="text" id="duration" name="duration"><br><br>
+
+        <button type="submit">Submit</button>
+        <label class="previous" for="page2-radio">Previous</label>
+    </div>
+
+</form>
+
+<style>
+    .page {
+        display: none;
+    }
+
+    #page1-radio:checked~.page#page1,
+    #page2-radio:checked~.page#page2,
+    #page3-radio:checked~.page#page3 {
+        display: block;
+    }
+
+    label.next,
+    label.previous {
+        cursor: pointer;
+        color: blue;
+    }
+</style>
